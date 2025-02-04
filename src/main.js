@@ -1,6 +1,6 @@
 import './style.css';
 import _ from 'underscore';
-import {crearDeck, pedirCarta, valorCarta, turnoComputadora, acumularPuntos, crearCarta} from './usecases';
+import {crearDeck, pedirCarta, turnoComputadora, acumularPuntos, crearCarta} from './usecases';
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
@@ -31,47 +31,6 @@ const inicializarJuego = (numJugadores = 2) => {
   puntos.forEach(elem => elem.innerText = 0);
   divCartasJugadores.forEach(elem => elem.innerHTML = "");
 };
-
-//turn: 0 = player 1 and the last will be the computer
-// const acumularPuntos = (carta, turno) => {
-//   puntosJugadores[turno] = puntosJugadores[turno] + valorCarta(carta);
-//   puntos[turno].innerText = puntosJugadores[turno];
-//   return puntosJugadores[turno];
-// }
-
-// const crearCarta = (carta, turno) => {
-//   const imgCarta = document.createElement("img");
-//   imgCarta.src = `assets/cartas/cartas/${carta}.png`;
-//   imgCarta.classList.add("carta");
-//   divCartasJugadores[turno].append(imgCarta)
-// }
-
-// const ganador = (params) => {
-//   const [puntosMinimos, puntosComputadora] = puntosJugadores;
-//   setTimeout(() => {
-//     if (puntosComputadora === puntosMinimos) {
-//       alert("Nadie gana :(");
-//     } else if (puntosMinimos > 21) {
-//       alert("La Computadora Gana");
-//     } else if (puntosComputadora > 21) {
-//       alert("Jugador Gana");
-//     } else {
-//       alert("La Computadora Gana");
-//     }
-//   }, 100);
-// }
-
-// const turnoComputadora = (puntosMinimos) => {
-//   let puntosComputadora = 0;
-//   do {
-
-//     const carta = pedirCarta(deck);
-//     puntosComputadora = acumularPuntos(carta, puntosJugadores.length - 1);
-//     crearCarta(carta, puntosJugadores.length - 1);
-
-//   } while (puntosComputadora <= puntosMinimos && puntosMinimos <= 21);
-//   ganador();
-// };
 
 // Events
 btnPedir.addEventListener("click", () => {

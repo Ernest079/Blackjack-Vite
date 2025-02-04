@@ -1,3 +1,8 @@
+/**
+ * Compara los puntos y muestra un mensaje sobre el ganador
+ * @param {Number} puntosMinimos 
+ * @param {Number} puntosComputadora 
+ */
 export const ganador = (puntosMinimos, puntosComputadora) => {
   setTimeout(() => {
     if (puntosComputadora === puntosMinimos) {

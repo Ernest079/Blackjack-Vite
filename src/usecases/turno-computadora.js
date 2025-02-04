@@ -5,9 +5,12 @@ import {crearCarta} from './crear-carta';
 import {ganador} from './ganador';
 
 /**
- * 
- * @param {Number} puntosMinimos Puntos minimos para ue gane la computadora
- * @param {Array<String>} deck Arreglo de cartas
+ * Realiza el turno automatico del jgador computadora
+ * @param {Number} puntosMinimos 
+ * @param {Number} puntosComputadora 
+ * @param {Array<string>} deck 
+ * @param {Document} puntos 
+ * @param {Document} divCartasJugadores 
  */
 export const turnoComputadora = (puntosMinimos, puntosComputadora, deck, puntos, divCartasJugadores) => {
 
